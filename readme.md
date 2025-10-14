@@ -27,18 +27,25 @@ Stopword removal using nltk.corpus.stopwords
 
 Lemmatization using WordNetLemmatizer
 
-# 3. Exploratory Data Analysis
+## 3. Exploratory Data Analysis
 
-Class distribution visualization using matplotlib.pie.
+## Class distribution visualization using matplotlib.pie.
 ![class distribution](https://github.com/DeXtAr47-oss/Text-classification/blob/8581a26cef1b03e51c26e56ab1e199d5ba4fc2ad/images/class_distribution.png)
     
-Basic statistics like number of characters, words, and sentences.
-![character distribution](https://github.com/DeXtAr47-oss/Text-classification/blob/8581a26cef1b03e51c26e56ab1e199d5ba4fc2ad/images/character_distribution.png)
-![words distribution](https://github.com/DeXtAr47-oss/Text-classification/blob/8581a26cef1b03e51c26e56ab1e199d5ba4fc2ad/images/word_distribution.png)
-![sentence distribution](https://github.com/DeXtAr47-oss/Text-classification/blob/8581a26cef1b03e51c26e56ab1e199d5ba4fc2ad/images/sentence_distribution.png)
-![most frequent words](https://github.com/DeXtAr47-oss/Text-classification/blob/8581a26cef1b03e51c26e56ab1e199d5ba4fc2ad/images/most_frequent_words.png)
+## Basic statistics like number of characters, words, and sentences.
+* Character distribution
+    ![character distribution](https://github.com/DeXtAr47-oss/Text-classification/blob/8581a26cef1b03e51c26e56ab1e199d5ba4fc2ad/images/character_distribution.png)
+  
+* Total no. of words distribution
+    ![words distribution](https://github.com/DeXtAr47-oss/Text-classification/blob/8581a26cef1b03e51c26e56ab1e199d5ba4fc2ad/images/word_distribution.png)
 
-# 4. Feature Engineering
+* Total no. of sentences distribution
+    ![sentence distribution](https://github.com/DeXtAr47-oss/Text-classification/blob/8581a26cef1b03e51c26e56ab1e199d5ba4fc2ad/images/sentence_distribution.png)
+
+* Most frequent words
+    ![most frequent words](https://github.com/DeXtAr47-oss/Text-classification/blob/8581a26cef1b03e51c26e56ab1e199d5ba4fc2ad/images/most_frequent_words.png)
+
+## 4. Feature Engineering
 
 Tfidf Embeddings: Converts text into a fixed-length numverical vector.
     ```
@@ -52,7 +59,7 @@ BERT Embeddings: Converts each text into a fixed-length numerical vector using a
 
 Embeddings are standardized using StandardScaler.
 
-# 5. Model Training
+## 5. Model Training
 
 Trained several classification models using train_test_split:
 
@@ -70,7 +77,7 @@ XGBoost Classifier (GridSearchCV tuned)
 
 Each model is optimized with GridSearchCV to find the best hyperparameters.
 
-6. Model Evaluation
+## 6. Model Evaluation
 
 For every model, classification metrics are reported:
 
