@@ -31,12 +31,13 @@ It combines traditional NLP preprocessing, feature extraction using BERT embeddi
 # 3. Exploratory Data Analysis
 
     Class distribution visualization using matplotlib.pie.
-    [class distribution](../images/class_distribution.png)
-
+    ![class distribution](https://github.com/DeXtAr47-oss/Text-classification/blob/8581a26cef1b03e51c26e56ab1e199d5ba4fc2ad/images/class_distribution.png)
     
-
-
     Basic statistics like number of characters, words, and sentences.
+    ![character distribution](https://github.com/DeXtAr47-oss/Text-classification/blob/8581a26cef1b03e51c26e56ab1e199d5ba4fc2ad/images/character_distribution.png)
+    ![words distribution](https://github.com/DeXtAr47-oss/Text-classification/blob/8581a26cef1b03e51c26e56ab1e199d5ba4fc2ad/images/word_distribution.png)
+    ![sentence distribution](https://github.com/DeXtAr47-oss/Text-classification/blob/8581a26cef1b03e51c26e56ab1e199d5ba4fc2ad/images/sentence_distribution.png)
+    ![most frequent words](https://github.com/DeXtAr47-oss/Text-classification/blob/8581a26cef1b03e51c26e56ab1e199d5ba4fc2ad/images/most_frequent_words.png)
 
 # 4. Feature Engineering
 
