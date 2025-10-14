@@ -31,7 +31,7 @@ It combines traditional NLP preprocessing, feature extraction using BERT embeddi
 # 3. Exploratory Data Analysis
 
     Class distribution visualization using matplotlib.pie.
-    ![class distribution](../images/class_distribution.png)
+    [class distribution](../images/class_distribution.png)
 
     
 
