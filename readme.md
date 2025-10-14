@@ -140,4 +140,4 @@ Each model is optimized with GridSearchCV to find the best hyperparameters.
 **Key Observations:**
 - BERT embeddings significantly improved performance across all models compared to TF-IDF
 - Average accuracy improvement: ~7% across all models
-- Class 1 (minority class) predictions improved substantially with BER
+- Class 1 (minority class) predictions improved substantially with BERT
