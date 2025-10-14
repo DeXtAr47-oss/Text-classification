@@ -79,14 +79,65 @@ Each model is optimized with GridSearchCV to find the best hyperparameters.
 
 ## 6. Model Evaluation
 
-For every model, classification metrics are reported:
+### TF-IDF Vectorization Results
 
-Accuracy
+| Model | Accuracy | Class | Precision | Recall | F1-Score | Support |
+|-------|----------|-------|-----------|--------|----------|---------|
+| **Gaussian Naive Bayes** | 0.80 | 0 | 0.81 | 0.99 | 0.89 | 80 |
+| | | 1 | 0.50 | 0.05 | 0.09 | 20 |
+| **Bernoulli Naive Bayes** (GridSearchCV) | 0.84 | 0 | 0.90 | 0.90 | 0.90 | 80 |
+| | | 1 | 0.60 | 0.60 | 0.60 | 20 |
+| **Logistic Regression** (GridSearchCV) | 0.82 | 0 | 0.82 | 0.99 | 0.90 | 80 |
+| | | 1 | 0.75 | 0.15 | 0.25 | 20 |
+| **Random Forest** (GridSearchCV) | 0.84 | 0 | 0.86 | 0.96 | 0.91 | 80 |
+| | | 1 | 0.70 | 0.35 | 0.47 | 20 |
+| **K-Nearest Neighbors** (GridSearchCV) | 0.80 | 0 | 0.80 | 1.00 | 0.89 | 80 |
+| | | 1 | 0.00 | 0.00 | 0.00 | 20 |
+| **XGBoost** (GridSearchCV) | 0.83 | 0 | 0.89 | 0.90 | 0.89 | 80 |
+| | | 1 | 0.58 | 0.55 | 0.56 | 20 |
 
-Precision
+### Summary
 
-Recall
+| Model | Overall Accuracy |
+|-------|------------------|
+| Bernoulli Naive Bayes | **0.84** |
+| Random Forest | **0.84** |
+| XGBoost | 0.83 |
+| Logistic Regression | 0.82 |
+| Gaussian Naive Bayes | 0.80 |
+| K-Nearest Neighbors | 0.80 |
 
-F1-Score
+### BERT Embeddings Results
 
-Confusion Matrix
+| Model | Accuracy | Class | Precision | Recall | F1-Score | Support |
+|-------|----------|-------|-----------|--------|----------|---------|
+| **Gaussian Naive Bayes** | 0.83 | 0 | 0.94 | 0.84 | 0.89 | 80 |
+| | | 1 | 0.55 | 0.80 | 0.65 | 20 |
+| **Bernoulli Naive Bayes** | 0.89 | 0 | 0.91 | 0.96 | 0.93 | 80 |
+| | | 1 | 0.80 | 0.60 | 0.69 | 20 |
+| **Logistic Regression** | 0.91 | 0 | 0.94 | 0.95 | 0.94 | 80 |
+| | | 1 | 0.79 | 0.75 | 0.77 | 20 |
+| **Random Forest** | 0.88 | 0 | 0.88 | 0.99 | 0.93 | 80 |
+| | | 1 | 0.90 | 0.45 | 0.60 | 20 |
+| **K-Nearest Neighbors** | 0.87 | 0 | 0.88 | 0.97 | 0.92 | 80 |
+| | | 1 | 0.82 | 0.45 | 0.58 | 20 |
+| **XGBoost** | 0.91 | 0 | 0.91 | 0.99 | 0.95 | 80 |
+| | | 1 | 0.92 | 0.60 | 0.73 | 20 |
+
+### Summary
+
+| Model | Overall Accuracy |
+|-------|------------------|
+| Logistic Regression | **0.91** |
+| XGBoost | **0.91** |
+| Bernoulli Naive Bayes | 0.89 |
+| Random Forest | 0.88 |
+| K-Nearest Neighbors | 0.87 |
+| Gaussian Naive Bayes | 0.83 |
+
+**Best Performers:** Logistic Regression and XGBoost both achieved 91% accuracy with BERT embeddings.
+
+**Key Observations:**
+- BERT embeddings significantly improved performance across all models compared to TF-IDF
+- Average accuracy improvement: ~7% across all models
+- Class 1 (minority class) predictions improved substantially with BER
